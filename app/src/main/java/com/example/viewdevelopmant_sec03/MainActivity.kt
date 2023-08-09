@@ -16,7 +16,7 @@ class MainActivity : AppCompatActivity() {
         val txtName = findViewById<EditText>(R.id.txtName)
         val txtResult = findViewById<TextView>(R.id.txtResult)
         btnSend.setOnClickListener {
-            txtResult.text = "Hello,${txtName.text}!"
+            txtResult.text = getString(R.string.greet, txtName.text)
         }
     }
 }

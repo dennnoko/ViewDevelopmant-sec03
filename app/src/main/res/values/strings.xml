@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">ViewDevelopmant-sec03</string>
+    <string name="greet">Hello,%1$s!</string>
 </resources>
