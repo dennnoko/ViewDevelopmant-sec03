@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.CheckBox
 import android.widget.Toast
+import android.widget.ToggleButton
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -11,7 +12,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         //get checkBox
-        val chk = findViewById<CheckBox>(R.id.chk)
+        val chk = findViewById<ToggleButton>(R.id.chk)
         //イベントリスナーを登録
         chk.setOnCheckedChangeListener { buttonView, isChecked ->
             Toast.makeText(
