@@ -18,9 +18,10 @@ class MainActivity : AppCompatActivity() {
         //Listener
         seekBar1.setOnSeekBarChangeListener(object : OnSeekBarChangeListener {
             override fun onProgressChanged(seekBar: SeekBar?, progress: Int, fromUser: Boolean) {
+                val current = (progress - 10) * 10
                 Toast.makeText(
                     this@MainActivity,
-                    String.format(Locale.JAPAN, "現在地:%d", progress),
+                    "現在値：${current}",
                     Toast.LENGTH_SHORT
                 ).show()
             }
