@@ -3,6 +3,7 @@ package com.example.viewdevelopmant_sec03
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.CheckBox
+import android.widget.Switch
 import android.widget.Toast
 import android.widget.ToggleButton
 
@@ -21,6 +22,20 @@ class MainActivity : AppCompatActivity() {
                     "E-mail notification ON"
                 } else {
                     "E-mail notification OFF"
+                },
+                Toast.LENGTH_SHORT
+            ).show()
+        }
+
+        val sw = findViewById<Switch>(R.id.sw1)
+
+        sw.setOnCheckedChangeListener { buttonView, isChecked ->
+            Toast.makeText(
+                this@MainActivity,
+                if (isChecked) {
+                    "ON"
+                } else {
+                    "OFF"
                 },
                 Toast.LENGTH_SHORT
             ).show()
