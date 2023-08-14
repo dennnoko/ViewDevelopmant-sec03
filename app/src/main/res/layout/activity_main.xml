@@ -12,6 +12,7 @@
         android:layout_height="wrap_content"
         android:entries="@array/spinner1_items"
         android:prompt="@string/spinner1_prompt"
+        android:spinnerMode="dialog"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
