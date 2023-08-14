@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">ViewDevelopmant-sec03</string>
 
-    <string name="spinner1_prompt">OSを選択してください</string>>
+    <string name="spinner1_prompt">日付を選択してください</string>>
     <string-array name="spinner1_items">
         <item>Windows</item>
         <item>Linux</item>
